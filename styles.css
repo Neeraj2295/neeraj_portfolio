@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.wrapper{
+    display: flex;
+    /* padding: 7% 5%; */
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.left{
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+    min-width: 20%;
+    display: flex; 
+    background-color: #03506f;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile{
+    max-height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 10px rgba(255, 255, 255, 0.651) solid;
+    
+
+}
+
+
+
+.nav{
+    list-style: none;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    /* font-weight: 100; */
+    letter-spacing: 3px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    opacity: 55%;
+}
+
+li{
+    margin: 20px 0;
+
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+
+/* SECTION 2 */
+
+
+.right{
+    padding: 0px 50px;
+}
+
+h1{
+    font-family: 'Teko',sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    text-transform: uppercase;
+    opacity: .75;
+    
+}
+
+h1>span{
+    color: #03506f;
+}
+
+#about{
+    padding: 80px 0 80px 0;
+}
+
+.address{
+  font-family: 'Teko',sans-serif;
+  text-transform: uppercase;
+  opacity: .75;
+  /* font-weight: 50; */
+  font-size: 1.5rem;
+}
+p>span>a{
+    text-decoration: none;
+    color: #03506f;
+    margin-left: 10px;
+}
+
+
+
+.about-text{
+    font-family: 'Quicksand',sans-serif;
+    margin-top: 40px;
+    font-size: 20px;
+    opacity: .75;
+    line-height: 2rem;
+}
+
+
+.links{
+    margin-top: 50px;
+    
+}
+.icon,.icon-1{
+    color: white;
+    opacity: .7;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon{
+    margin-left: 25px;
+}
+
+hr{
+    border-top: 1px solid black;
+    opacity: .4;
+}
+
+/* experience */
+
+#experiance,#education,#skills,#intrests{
+    margin: 80px 0;
+    
+    opacity: .75;
+}
+
+
+.title{
+    font-family: 'Teko',sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    /* opacity: .75; */
+}
+
+
+
+.sub-title{
+ margin-top: 30px;   
+ font-family: 'Teko',sans-serif;
+ text-transform: uppercase;
+ font-size: 2rem;
+ opacity: .75;   
+}
+
+.freelancer-para{
+    font-family: 'Quicksand',sans-serif;
+    opacity: .75;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.project-list{
+    margin-top: 10px;
+    color: black;
+    list-style-type: none;
+}
+.project{
+    margin-top: 10px;
+    font-family: 'Quicksand',sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.edu-para{
+    text-transform: uppercase;
+    opacity: .75;
+    font-size: 20px;
+    font-family: 'Quicksand',sans-serif ;
+    margin-top: 5px;
+}
+
+.skills-icon{
+    color: grey;
+    margin: 30px 20px 10px 0;
+}
+
+.svg{
+    filter: grayscale();
+}
+.c-svg{
+    height: 100px;
+}
+
+.skill-container{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.intrest-text{
+    font-size: 20px;
+    font-family: 'Quicksand',sans-serif ;
+}
+
+
+
+
+/* Responsive Design */
+
+@media (max-width:700px) {
+    body{
+        overflow-x: hidden;
+    }
+    .left {
+        /* display: none; */
+        position: fixed;
+        z-index: 12;
+
+        left: 0;
+        top: 0;
+        right: 0;
+        max-height: 10vh;
+        
+        
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 4px 10px; */
+
+    }
+
+    .nav-link{
+        margin-left: 7px;
+        font-size: 13px;
+        letter-spacing: 1px;
+
+    }
+    #abt{
+        margin-left: 0;
+    }
+    
+    h1{
+        position: relative;
+        
+    }
+
+    h1 > span{
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    .address {
+        margin-top: 40px;
+    }
+
+    .profile {
+        display: none;
+    }
+    .right {
+        padding: 1.5rem;
+    }
+}
